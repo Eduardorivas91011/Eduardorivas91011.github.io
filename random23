@@ -1,6 +1,6 @@
 <html>
 <body>
-<p>"Click for a number between 1 and 100" <"p">
+<p>"Click for a number between 1 and 100" </p>
 
 <button onclick="myFunction()">Try it</button>
 
