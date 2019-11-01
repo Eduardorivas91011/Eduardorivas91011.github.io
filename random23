@@ -2,7 +2,7 @@
 <body>
 <p>"Click for a number between 1 and 100" <"p">
 
-<button> onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Try it</button>
 
 <p id = "demo"></p>
 
@@ -14,3 +14,4 @@ function myFunction() {
 </script>
 </body>
 </html>
+#https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_random3
