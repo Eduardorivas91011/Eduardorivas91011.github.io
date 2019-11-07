@@ -1,0 +1,64 @@
+<html>
+<body>
+<p>Click for a number between 1 and 100</p>
+
+<button> onclick="myFunction()">Try it</button>
+
+<p id = "demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo")
+  x.innerHTML = Mathfloor((Math.random() * 100) + 1);
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<body2>
+<p>Click to visit IB</p>
+
+<button> onclick="myFunction()">Tryit</button
+
+<p id = "demo"></p>
+
+<script>
+function myFunction() {
+  document.write(txt.link("https://lamar.mcallenisd.org/"));
+ }
+ </script>
+ 
+ </body2>
+ </html>
+
+<html>
+<body3>
+<p>Click for a meme</p>
+
+<button> onclick="myFunction()">Try it</button>
+
+<p id = "demo"></p>
+
+<script>
+imagesArray = new Array(7);
+imagesArray[0] = new Image();
+imagesArray[0].src = new "http://blogs.ibo.org/universityadmissions/files/2014/12/ib-meme-6-300x294.jpg";
+imagesArray[1] = new Image();
+imagesArray[1].src = new "https://i.pinimg.com/236x/a6/48/4e/a6484e64097c97654df2317ce23cf11c--funny-things-funny-stuff.jpg";
+imagesArray[2] = new Image();
+imagesArray[2].src = new "https://66.media.tumblr.com/66b87a64742eaed1c3c08a61a83c1a23/tumblr_nmqmf14qDT1uscgono1_640.jpg";
+imagesArray[3] = new Image();
+imagesArray[3].src = new ";
+imagesArray[4] = new Image();
+imagesArray[4].src = new "fish.jpg";
+imagesArray[5] = new Image();
+imagesArray[5].src = new "parrot.jpg";
+imagesArray[6] = new Image();
+imagesArray[6].src = new "cat.jpg";
+
+function displayImage() {
+  var num = Math.floor(Math.random());
+  document.getElementById(imagesArray[num]);
+}
