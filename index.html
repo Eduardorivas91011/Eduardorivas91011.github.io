@@ -7,10 +7,13 @@
 </head>
 <body>
     <h1>My Figure</h1>
-  <canvas width="200" height="200" id="myCanvas"></canvas>
+  <canvas width="2000" height="2000" id="myCanvas"></canvas>
     <script>
       var canvas = document.getElementById("myCanvas");
       var ctx = canvas.getContext("2d");
+      
+      ctx.fillStyle = "rgb(255, 255, 255)";
+      ctx.fillRect(0, 0, 200, 200);
       
       ctx.fillStyle = "rgb(100, 100, 200)";
       ctx.fillRect(40, 40, 40, 30);
