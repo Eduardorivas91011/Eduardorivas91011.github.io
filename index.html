@@ -27,10 +27,13 @@
   `<h2></h2>
   <canvas id="canvas2" width="40" height="100" style="border:1px solid #000000;"></canvas>
   <script>
-        var c=document.getElementById("canvas2");
-        var ctx=c.getContext("2d");
-        ctx.strokeStyle="rgba(0,0,0,1)";
-        ctx.strokeRect(0,0,100,100);
+       var main = document.getElementById("canvas2");
+        var render = main.getContext("2d");
+        main.width = 40;
+        main.height = 100;
+        main.style.left = "30px";
+        main.style.top = "30px";
+        main.style.position = "absolute";
     </script>
 </body>
 </html>
