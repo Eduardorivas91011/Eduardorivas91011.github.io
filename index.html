@@ -71,11 +71,13 @@
   <h6></h6>
   <canvas id="canvas6" width="30" height="130" style="border:1px solid #000000;"></canvas>
   <script>
-        var c = document.getElementById("canvas6");
-        var ctx = c.getContext("2d");
-        ctx.fillRect(130, 492, 30, 130);
-        ctx.translate(130, 492);
-        ctx.fillRect(130, 492, 30, 130);
+        var main = document.getElementById("canvas6");
+         var render = main.getContext("2d");
+         main.width = 30;
+         main.height = 130;
+         main.style.left = "130px";
+         main.style.top = "492px";
+         main.style.position = "absolute";
     </script>
 </body>
 </html>
