@@ -1,109 +1,115 @@
-<html>
-<head>
-  <title>My Figure</title>
+<title>Animated Figure</title>
   <style>
     canvas {border: 1px solid black;}
   </style>
 </head>
 <body>
-    <h1>My Figure</h1>
-  <canvas width="200" height="200" id="myCanvas"></canvas>
+    <h1 id="myH1">Animated Figure </h1>
+  <canvas width="2000" height="2000" id="myCanvas"></canvas>
     <script>
-      var canvas = document.getElementById("myCanvas");
-      var ctx = canvas.getContext("2d");
-      
-      ctx.fillStyle = "rgb(255, 255, 255)";
-      ctx.fillRect(0, 0, 200, 200);
-      
-      ctx.fillStyle = "rgb(100, 100, 200)";
-      ctx.fillRect(40, 40, 40, 30);
-      
-      ctx.fillStyle = "rgb(100, 100, 200)";
-      ctx.fillRect(110, 40, 40, 30);
-      
-      ctx.fillStyle = "rgb(0, 0, 0)";
-      ctx.fillRect(50, 140, 180, 40);
-    </script>
-  `<h2></h2>
-  <canvas id="canvas2" width="100" height="220" style="border:1px solid #000000;"></canvas>
-  <script>
-       var main = document.getElementById("canvas2");
-        var render = main.getContext("2d");
-        main.width = 100;
-        main.height = 220;
-        main.style.left = "60px";
-        main.style.top = "270px";
-        main.style.position = "absolute";
-    </script>
-  <h3></h3>
-  <canvas id="canvas3" width="30" height="120" style="border:1px solid #000000;"></canvas>
-  <script>
-       var main = document.getElementById("canvas3");
-        var render = main.getContext("2d");
-        main.width = 30;
-        main.height = 120;
-        main.style.left = "30px";
-        main.style.top = "270px";
-        main.style.position = "absolute";
-    </script>
-  <h4></h4>
-  <canvas id="canvas4" width="30" height="120" style="border:1px solid #000000;"></canvas>
-  <script>
-       var main = document.getElementById("canvas4");
-        var render = main.getContext("2d");
-        main.width = 30;
-        main.height = 120;
-        main.style.left = "164px";
-        main.style.top = "270px";
-        main.style.position = "absolute";
-        window.onclick = myFunction;
-
-function myFunction() {
-  document.getElementsByTagName("CANVAS4")[0].style.backgroundColor = "black";
-}
-    </script>
-  <h5></h5>
-  <canvas id="canvas5" width="30" height="130" style="border:1px solid #000000;"></canvas>
-  <script>
-       var main = document.getElementById("canvas5");
-        var render = main.getContext("2d");
-        main.width = 30;
-        main.height = 130;
-        main.style.left = "61px";
-        main.style.top = "492px";
-        main.style.position = "absolute";
-        window.onclick = myFunction;
-
-function myFunction() {
-  document.getElementsByTagName("CANVAS5")[0].style.backgroundColor = "black";
-}
-    </script>
-  <h6></h6>
-  <canvas id="canvas6" width="30" height="130" style="border:1px solid #000000;"></canvas>
-  <script>
-        var main = document.getElementById("canvas6");
-         var render = main.getContext("2d");
-         main.width = 30;
-         main.height = 130;
-         main.style.left = "130px";
-         main.style.top = "492px";
-         main.style.position = "absolute";
-        window.onclick = myFunction;
-
-function myFunction() {
-  document.getElementsByTagName("CANVAS6")[0].style.backgroundColor = "black";
-}
-    </script>
-<button type="button" onclick="myFunction()">Set background color</button>
+   
+   document.getElementById("myH1").style.color = "white"
+    
+  document.body.style.backgroundColor = "black";
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(300, 15, 200, 200);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill();
   
-  <script>
-function myFunction() {
-  document.body.style.backgroundColor = "red";
-}
-</script>
-
-</body>
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(300, 105, 80, 20);
+	ctx.stroke();
+    ctx.fillStyle = "purple";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(420, 105, 80, 20);
+	ctx.stroke();
+    ctx.fillStyle = "purple";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(420, 115, 80, 1);
+	ctx.stroke();
+    ctx.fillStyle = "black";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(320, 105, 40, 20);
+	ctx.stroke();
+    ctx.fillStyle = "black";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(440, 105, 40, 20);
+	ctx.stroke();
+    ctx.fillStyle = "black";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(290, 215, 220, 340);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(260, 215, 30, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(510, 215, 30, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+    var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(317, 555, 35, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+     var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(440, 555, 35, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+ 
+     </script>
+     
+ </body>
+ 
 </html>
+
+
+
+
+
     
     
 
