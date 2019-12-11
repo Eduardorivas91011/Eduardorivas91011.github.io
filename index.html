@@ -5,7 +5,7 @@
   </style>
 </head>
 <body>
-<button onclick="setTimeout(wink, 2000); setTimein(nonwink, 5000) ">Click me</button>
+<button onclick="setTimeout(wink, 2000); serTimeout(nonwink, 5000)">Click me</button>
     <h1 id="myH1">Animated Figure </h1>
   <canvas width="2000" height="2000" id="myCanvas"></canvas>
   
@@ -160,6 +160,10 @@ function wink(){
 function nonwink(){
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
+        ctx.beginPath();
+
     ctx.beginPath();
 	ctx.rect(300, 15, 200, 200);
 	ctx.stroke();
