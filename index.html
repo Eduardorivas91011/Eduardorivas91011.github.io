@@ -5,8 +5,7 @@
   </style>
 </head>
 <body>
-<button onclick="wink()">Click me</button>
-<button onclick="wink2()">Click me after</button>
+<button onclick="setTimeout(wink, 2000)">Click me</button>
     <h1 id="myH1">Animated Figure </h1>
   <canvas width="2000" height="2000" id="myCanvas"></canvas>
   
@@ -14,7 +13,14 @@
    document.getElementById("myH1").style.color = "white"
     
   document.body.style.backgroundColor = "black";
-	
+  
+  var myVar = setInterval(myTimer, 4000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("myCanvas").innerHTML = d.toLocaleTimeString();
+}
+
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
     ctx.beginPath();
@@ -148,85 +154,14 @@ function wink(){
 	ctx.beginPath();
 	ctx.rect(440, 555, 35, 550);
 	ctx.stroke();
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
 	ctx.fill()
     
     
     
     }
+
     
- function wink2(){
-		var c = document.getElementById("myCanvas");
-		var ctx = c.getContext("2d");
-        ctx.beginPath();
-        ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
-        ctx.beginPath();
-        ctx.beginPath();
-        
-	ctx.rect(300, 15, 200, 200);
-	ctx.stroke();
-    ctx.fillStyle = "white";
-	ctx.fill();
-  
-	ctx.beginPath();
-	ctx.rect(300, 105, 80, 20);
-	ctx.stroke();
-    ctx.fillStyle = "purple";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(420, 105, 80, 20);
-	ctx.stroke();
-    ctx.fillStyle = "purple";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(440, 105, 40, 20);
-	ctx.stroke();
-    ctx.fillStyle = "black";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(320, 105, 40, 20);
-	ctx.stroke();
-    ctx.fillStyle = "black";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(290, 215, 220, 340);
-	ctx.stroke();
-    ctx.fillStyle = "white";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(260, 215, 30, 550);
-	ctx.stroke();
-    ctx.fillStyle = "white";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(510, 215, 30, 550);
-	ctx.stroke();
-    ctx.fillStyle = "white";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(317, 555, 35, 550);
-	ctx.stroke();
-    ctx.fillStyle = "white";
-	ctx.fill()
-    
-	ctx.beginPath();
-	ctx.rect(440, 555, 35, 550);
-	ctx.stroke();
-    ctx.fillStyle = "white";
-	ctx.fill()
-    
-          
-    
-    
-    
-    }
      </script>
      
  </body>
