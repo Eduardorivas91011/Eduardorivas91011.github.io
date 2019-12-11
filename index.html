@@ -5,7 +5,7 @@
   </style>
 </head>
 <body>
-<button onclick="setTimeout(wink, 2000); serTimeout(nonwink, 5000)">Click me</button>
+<button onclick="setTimeout(wink, 1000); setTimeout(nonwink, 2000)">Click me</button>
     <h1 id="myH1">Animated Figure </h1>
   <canvas width="2000" height="2000" id="myCanvas"></canvas>
   
@@ -15,12 +15,10 @@
   document.body.style.backgroundColor = "black";
   
   var myVar = setInterval(myTimer, 4000);
-
 function myTimer() {
   var d = new Date();
   document.getElementById("myCanvas").innerHTML = d.toLocaleTimeString();
 }
-
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
     ctx.beginPath();
@@ -83,7 +81,6 @@ function myTimer() {
     ctx.fillStyle = "white";
 	ctx.fill()
     
-
 function wink(){
 		var c = document.getElementById("myCanvas");
 		var ctx = c.getContext("2d");
@@ -157,13 +154,14 @@ function wink(){
     ctx.fillStyle = "white";
 	ctx.fill()
     
-function nonwink(){
+    }
+    
+function nonwink(){ 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
         ctx.beginPath();
         ctx.clearRect(0,0,myCanvas.width,myCanvas.height)
         ctx.beginPath();
-
     ctx.beginPath();
 	ctx.rect(300, 15, 200, 200);
 	ctx.stroke();
@@ -224,13 +222,9 @@ function nonwink(){
     ctx.fillStyle = "white";
 	ctx.fill()
     
-    
-    
     }
-
     
      </script>
-     
  </body>
- 
 </html>
+
