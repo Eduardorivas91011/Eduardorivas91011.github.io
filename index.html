@@ -5,7 +5,7 @@
   </style>
 </head>
 <body>
-<button onclick="setTimeout(wink, 2000)">Click me</button>
+<button onclick="setTimeout(wink, 2000); setTimeout(nonwink, 4000) ">Click me</button>
     <h1 id="myH1">Animated Figure </h1>
   <canvas width="2000" height="2000" id="myCanvas"></canvas>
   
@@ -117,6 +117,69 @@ function wink(){
     
 	ctx.beginPath();
 	ctx.rect(0, 0, 40, 20);
+	ctx.stroke();
+    ctx.fillStyle = "black";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(320, 105, 40, 20);
+	ctx.stroke();
+    ctx.fillStyle = "black";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(290, 215, 220, 340);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(260, 215, 30, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(510, 215, 30, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(317, 555, 35, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(440, 555, 35, 550);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill()
+    
+	function nonwink(){
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+    ctx.beginPath();
+	ctx.rect(300, 15, 200, 200);
+	ctx.stroke();
+    ctx.fillStyle = "white";
+	ctx.fill();
+  
+	ctx.beginPath();
+	ctx.rect(300, 105, 80, 20);
+	ctx.stroke();
+    ctx.fillStyle = "purple";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(420, 105, 80, 20);
+	ctx.stroke();
+    ctx.fillStyle = "purple";
+	ctx.fill()
+    
+	ctx.beginPath();
+	ctx.rect(440, 105, 40, 20);
 	ctx.stroke();
     ctx.fillStyle = "black";
 	ctx.fill()
