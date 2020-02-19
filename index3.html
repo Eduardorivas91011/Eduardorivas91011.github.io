@@ -10,13 +10,16 @@
 
 <button onclick="myFunction()">Press Here</button>
 
-<p id = "demo"></p>
 
-<script>
-function myFunction() {
-  document.write(txt.link("")); #Add datapoint for possible link to a database of all the ballot votes
- }
- </script>
+ <script>
+    var cnt=0;
+    function CountFun(){
+     cnt++
+     var divData=document.getElementById("showCount");
+     divData.innerHTML="Number of Downloads: ("+cnt +")";//this part has been edited
+
+    }
+  </script>
 
   </body2>
 </html>
@@ -27,7 +30,6 @@ function myFunction() {
 
 <button onclick="myFunction()">Press Here</button>
 
-<p id = "demo"></p>
 
 <script>
 function myFunction() {
