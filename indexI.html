@@ -68,16 +68,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-     1. How old are you?<br>
+     1. How old are you?
      <input type="text" name="age"><br>
      <span class="error">* <?php echo $ageErr;?></span>
      <br><br>
-     2. What is your sex?<br>
+     2. What is your sex?
      <input type="radio" name="sex" value="male">Male
      <input type="radio" name="sex" value="female">Female
      <span class="error">* <?php echo $sexErr;?></span>
      <br><br>
-     3. What is your race?<br>
+     3. What is your race?
      <select name= "race">
         <option value="American Indian or Alaskan Native" selected="data for race">American Indian or Alaskan Native</option>
         <option value="Asian">Asian</option>
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <option value="White">White</option>
         <span class="error">* <?php echo $raceErr;?></span>
         <br><br>
-     4. Your income range is:<br>
+     4. Your income range is:
      <input type="radio" name="income" value="$0-$29,999">$0-$29,999
      <input type="radio" name="income" value="$30,000-$49,999">$30,000-$49,999
      <input type="radio" name="income" value="$50,000-$99,999">$50,000-$99,999
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <input type="radio" name="income" value="Prefer not to answer">Prefer not to answer
      <span class="error">* <?php echo $incomeErr;?></span>
      <br><br>
-     5. Is this your first time voting?<br>
+     5. Is this your first time voting?
      <input type="text" name="vote">
      <span class="error">* <?php echo $voteErr;?></span>
      <br><br>
