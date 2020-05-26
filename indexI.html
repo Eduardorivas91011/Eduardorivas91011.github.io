@@ -81,28 +81,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <label for="female">Female</label><br><br>
      <span class="error">* <?php echo $sexErr;?></span>
   <p>3. What is your race?</p>
-     <select name= "race">
-     <option value="American Indian or Alaskan Native" selected="data for race">American Indian or Alaskan Native</option>
-     <option value="Asian">Asian</option>
-     <option value="Black or African American">Black or African American</option>
-     <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
-     <option value="White">White</option>
+     <form action="/action_page.php">
+     <input type="radio" id="American Indian or Alaskan Native" name="income" value="American Indian or Alaskan Native">
+     <label for="American Indian or Alaskan Native">American Indian or Alaskan Native</label><br>
+     <input type="radio" id="Asian" name="income" value="Asian">
+     <label for="Asian">Asian</label><br>
+     <input type="radio" id="Black or African American" name="income" value="Black or African American">
+     <label for="Black or African American">Black or African American</label><br>
+     <input type="radio" id="Native Hawaiian or Other Pacific Islander" name="income" value="Native Hawaiian or Other Pacific Islander">
+     <label for="Native Hawaiian or Other Pacific Islander"Native Hawaiian or Other Pacific Islander</label><br>
+     <input type="radio" id="White" name="income" value="White">
+     <label for="White">White</label><br>
+     <input type="radio" id="Unknown" name="income" value="Unknown">
+     <label for="Unknown">Unknown</label><br>
      <span class="error">* <?php echo $raceErr;?></span>
      <br><br>
   <p>4. What is your income range?</p>
-     <form action="/action_page.php">
-     <input type="radio" id="$0-$29,999" name="income" value="$0-$29,999">
-     <label for="$0-$29,999">$0-$29,999</label><br>
-     <input type="radio" id="$30,000-$49,999" name="income" value="$30,000-$49,999">
-     <label for="$30,000-$49,999">$30,000-$49,999</label><br>
-     <input type="radio" id="$50,000-$99,999" name="income" value="$50,000-$99,999">
-     <label for="$50,000-$99,999">$50,000-$99,999</label><br>
-     <input type="radio" id="$100,000-$349,999" name="income" value="$100,000-$349,999">
-     <label for="$100,000-$349,999">$100,000-$349,999</label><br>
-     <input type="radio" id="$350,000-higher" name="income" value="$350,000-higher">
-     <label for="$350,000-higher">$350,000-higher</label><br>
-     <input type="radio" id="Prefer not to answer" name="income" value="Prefer not to answer">
-     <label for="Prefer not to answer">Prefer not to answer</label><br>
+     <form actio="/action_page.php">
+     <option value="$0-$29,999" selected="data for race">$0-$29,999</option>
+     <option value="$30,000-$49,999">$30,000-$49,999</option>
+     <option value="$50,000-$99,999">$50,000-$99,999</option>
+     <option value="$100,000-$349,999">$100,000-$349,999</option>
+     <option value="$350,000-higher">$350,000-higher</option>
      <span class="error">* <?php echo $incomeErr;?></span>
      <br><br>
   <p>5. Is this your first time voting?</p>
