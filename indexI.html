@@ -107,7 +107,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <span class="error">* <?php echo $incomeErr;?></span>
      <br><br>
   <p>5. Is this your first time voting?</p>
-     <input type="text" name="vote">
+     <form action ="/action_page.php">
+     <input type="text" name="vote"><br>
      <span class="error">* <?php echo $voteErr;?></span>
      <br><br>
      <input type="submit" value="Enter">
