@@ -20,6 +20,7 @@
   <body3>
     
   <?php
+  // https://www.w3schools.com/php/php_form_required.asp used in Lines 24-69
   $ageErr = $raceErr = $incomeErr = $voteErr = "";
   $age = $sex = $race = $income = $vote = "";
   
@@ -69,15 +70,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
      
   <p>1. How old are you?</p>
-     <form action="/action_page.php">
+     <form action="/action_page.php"> <!--https://www.w3schools.com/php/php_form_required.asp is same with this line of code-->
      <input type="text" name="age">
-     <span class="error">* <?php echo $ageErr;?></span>
+     <span class="error">* <?php echo $ageErr;?></span> <!--https://www.w3schools.com/php/php_form_required.asp is same with this line of code-->
      <br><br>
   <p>2. What is your sex?</p>
      <form action="/action_page.php">
      <input type="radio" id="male" name="sex" value="male">
      <label for="male">Male</label><br>
-     <input type="radio" id="female" name="sex" value="female">
+     <input type="radio" id="female" name="sex" value="female"> <!--Option code is from https://www.wikihow.com/Create-a-Questionnaire-in-HTML-->
      <label for="female">Female</label><br><br>
      <span class="error">* <?php echo $sexErr;?></span>
   <p>3. What is your race?</p>
@@ -119,6 +120,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
   <body4>
 <p id = "demo"></p>
+             
+<button onclick="myFunction()">Submit</button>  <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_redirect_webpage-->            
 
 <script>
 function myFunction1() {
